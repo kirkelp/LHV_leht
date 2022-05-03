@@ -111,11 +111,11 @@
                         <li class="list-group-item"><a>Smart-ID</a></li>
                         <li class="list-group-item"><a>PIN-kalkulaator</a></li>
                         <li class="list-group-item"><a>Salasõna</a></li>
-                      </ul>
-                 <form class="d-flex" method="POST">
+                    </ul>
+                <form class="d-flex" method="POST">
                     <input class="form-control me-2" id="login-nickname" type="text" name="nickname" placeholder="Kasutajanimi">
                     <button class="btn btn-dark" id="login-submit">Sisene</button>
-                 </form>
+                </form>
             </div>
         </div>
         <div class="container">
@@ -127,7 +127,7 @@
                     <li class="list-group-nav"><a>KINDLUSTUS</a></li>
                     <li class="list-group-nav"><a>PENSION</a></li>
                     <li class="list-group-nav"><a>VAJAD ABI?</a></li>
-                  </ul>
+                </ul>
                 </div>
         </div>
     </div>
@@ -203,30 +203,32 @@
                     <p class="lead">
                         LHV ei ole lihtsalt pank. Meil on panga süda, aga idufirmalik mõtlemine. Meid inspireerivad uued lähenemised, uued võimalused ja uus tehnoloogia.
                     </p>
-                    <a href="#" class="btn mt-3">Loe lisa
+                    <a href="#" class="btn mt-3">Vaata töökuulutusi
                         <i class="bi bi-arrow-right"></i>
                     </a>
                 </div>
                 <div class="col-md">
                     <img src="https://www.lhv.ee/assets/images/headers/avaleht-tookuulutus-thumb.png" class="rounded mx-auto d-block" alt="lhv_roheline">
                 </div>
-        </div>
+    </div>
 
 
     
 
-    <!-- UUS Blogi/uudiste/podcasti voog -->
+        <!-- UUS Blogi/uudiste/podcasti voog -->
         <div class="container_blog">
             <div class="row text-center">
                 <!-- BLOGI -->
                 <div class="col-md">
-                    <div class="card1 text-dark">
+                    <div class="card1 ">
                         <h3 class="card-title mb-3">Loe blogi</h3>
                         <div class="card-body1">
                             <div class="blog-wrap">
+                                 <p class="card-text text-left">
                                 <img src="https://www.lhv.ee/assets/images/elements/blog.svg" alt="">
                                     Koroonaaeg tõstis klientide tähelepanu reisikindlustuse suhtes
-                            </div>
+                                 </p>
+                                </div>
                             <div class="date">
                                 <p>11.04.2022</p>
                             </div>
@@ -237,7 +239,14 @@
                             <br>
                             <p>16.02.2022</p>
                         </div>
-                    </div>   
+                    </div> 
+                     <div id="readAll">
+                         <p>
+                            <a href="#" class="btn mt-3"><strong>Loe kõiki blogipostitusi</strong>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                         </p>
+                     </div> 
                 </div>
                 <!-- UUDISED -->
                 <div class="col-md">
@@ -257,6 +266,13 @@
                                 </p>
                         </div>
                         <p class="text-left">13.04.2022</p>
+                        <div id="">
+                            <p>
+                               <a href="#" class="btn mt-3"><strong>Vaata kõiki uudiseid</strong>
+                                   <i class="bi bi-arrow-right"></i>
+                               </a>
+                            </p>
+                        </div> 
                     </div>   
                 </div>
                 <!-- PODCAST -->
@@ -269,7 +285,7 @@
                                     Maaklerite tund: Märtsikuu turgudel
                                     <br>
                                 </p>
-                                <p class="text-left">05.04.2022</p>
+                                <p class="text-left podcast" id="podcast-date">05.04.2022</p>
                         </div>
                         <div class="card-body text-left">
                                 <p class="card-text text-left">
@@ -278,14 +294,19 @@
                                 </p>
                         </div>
                         <p class="text-left">05.04.2022</p>
+                        <div id="">
+                            <p>
+                               <a href="#" class="btn mt-3"><strong>Kuula kõiki podcaste</strong>
+                                 <i class="bi bi-arrow-right"></i>
+                               </a>
+                            </p>
+                        </div> 
                     </div>   
                 </div>
             </div>
         </div>
 
 
-
-   
 
     <!-- UUS LHV on roheline -->
 
@@ -311,10 +332,10 @@
 
     <!-- TULE KLIENDIKS JNE -->
     <section class="p-5">
-        <div class="container">
+        <div class="container-footer-navbar">
             <div class="row ">
                 <div class="col-md">
-                    <h3>Tule kliendiks</h3>
+                    <h3 class="d-none d-md-block">Tule kliendiks</h3>
                     <ul class="list-unstyled d-none d-md-block">
                         <li>Eraklient</li>
                         <li>Äriklient</li>
@@ -326,7 +347,7 @@
                     </ul>
                 </div>
                 <div class="col-md">
-                    <h3>Kasulikku</h3>
+                    <h3 class="d-none d-md-block">Kasulikku</h3>
                     <ul class="list-unstyled d-none d-md-block">
                         <li>Hinnakiri ja tingimused</li>
                         <li>Ettepanekud ja kaebused</li>
@@ -337,7 +358,7 @@
                     </ul>
                 </div>
                 <div class="div col-md">
-                    <h3>LHV</h3>
+                    <h3 class="d-none d-md-block">LHV</h3>
                     <ul class="list-unstyled d-none d-md-block">
                         <li>Ettevõttest</li>
                         <li>Investorile</li>
@@ -350,13 +371,80 @@
                     </ul>
                 </div>
                 <div class="div col-md">
-                    <h3>KONTAKT</h3>
+                    <h3 class="d-none d-md-block">KONTAKT</h3>
                     <ul class="list-unstyled d-none d-md-block">
                         <li>Kontaktid</li>
                         <li>Kontorid</li>
                         <li>Broneeri kohtumisaeg</li>
                         <li>Sularahaautomaadid</li>
                     </ul>
+                </div>
+            </div>
+            <!-- ACCORDION MOBILE -->
+            <div class="accordion d-md-none  d-lg-none d-xl-none " id="myAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne">TULE KLIENDIKS</button>									
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <ul class="list-unstyled card-body">
+                        <li>Eraklient</li>
+                        <li>Äriklient</li>
+                        <li>Noortepank</li>
+                        <li>Lapsekonto</li>
+                        <li>Au-klient</li>
+                        <li>Privaatsuspangandus</li>
+                        <li>Ava konto</li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="d-none d-md-block">KASULIKKU</h3>
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">KASULIKKU</button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                        <ul class="list-unstyled card-body">
+                            <li>Hinnakiri ja tingimused</li>
+                            <li>Ettepanekud ja kaebused</li>
+                            <li>Turvalisus</li>
+                            <li>Teata petulehest</li>
+                            <li>Teenuste seis</li>
+                            <li>KKK</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="d-none d-md-block">LHV</h3>
+                    <h2 class="accordion-header" id="headingThree">
+                        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">LHV</button>                     
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                        <ul class="list-unstyled card-body">
+                            <li>Ettevõttest</li>
+                            <li>Investorile</li>
+                            <li>Tööpakkumised</li>
+                            <li>Hea tegu</li>
+                            <li>Roheline LHV</li>
+                            <li>Finantsportaal</li>
+                            <li>Uudised</li>
+                            <li>Blogi</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="d-none d-md-block">KONTAKT</h3>
+                    <h2 class="accordion-header" id="headingFour">
+                        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour">KONTAKT</button>                     
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                        <ul class="list-unstyled card-body">
+                            <li>Kontaktid</li>
+                            <li>Kontorid</li>
+                            <li>Broneeri kohtumisaeg</li>
+                            <li>Sularahaautomaadid</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -371,11 +459,17 @@
         <!-- FOOTER SOCIALS -->
 
         <nav class="navbar navbar-expand-lg py-3">
-        <div class="container">
-            <a href="#" class="navbar-brand">
+        <div class="container-footer-social">
+            <a href="" class="navbar-brand">
                 <img src="https://www.lhv.ee/assets/images/icons/small/insta.svg" alt="">
+            </a>
+            <a href=""  class="navbar-brand">
                 <img src="https://www.lhv.ee/assets/images/icons/small/fb.svg" alt="">
+            </a>
+            <a href="" class="navbar-brand">
                 <img src="https://www.lhv.ee/assets/images/icons/small/youtube.svg" alt="">
+            </a>
+            <a href="" class="navbar-brand">
                 <img src="https://www.lhv.ee/assets/images/icons/small/soundcloud.svg" alt="">
             </a>
             <div class="navbar-collapse">
@@ -396,7 +490,7 @@
     <!-- FOOTER DISCLAIMER -->
         <div class="row">
             <div class="col-md-offset-1 disclaimer">
-                <p>AS LHV Group, Tartu mnt 2, 10145, Tallinn. Oled finantsteenuseid pakkuvate ettevõtete AS LHV Pank, AS LHV Finance, AS LHV Kindlustus ja AS LHV Varahaldus veebilehel. Enne finantsteenuse lepingu sõlmimist tutvu teenuse tingimustega või küsi lisainfot. Noteeringud on viivitusega.</p>
+                <p id="footertext">AS LHV Group, Tartu mnt 2, 10145, Tallinn. Oled finantsteenuseid pakkuvate ettevõtete AS LHV Pank, AS LHV Finance, AS LHV Kindlustus ja AS LHV Varahaldus veebilehel. Enne finantsteenuse lepingu sõlmimist tutvu teenuse tingimustega või küsi lisainfot. Noteeringud on viivitusega.</p>
             </div>
         </div>
     </div>
