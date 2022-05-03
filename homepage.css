@@ -2,8 +2,7 @@
 body {
   font-weight: 500;
   font-size: 13px;
-  font-family: 'Roboto' sans-serif;
-  line-height: 1; }
+  font-family: 'Roboto' sans-serif; }
 
 h2 {
   font-size: 32px;
@@ -11,13 +10,10 @@ h2 {
 
 h3 {
   font-size: 28px;
-  font-weight: 600; }
+  font-weight: 700; }
 
 p {
   font-size: 20px; }
-
-.lhv-logo {
-  position: relative; }
 
 .pull-left {
   line-height: 20px;
@@ -113,18 +109,91 @@ p {
 
 .card {
   border: 0px;
-  padding: 40px 24px; }
+  padding: 40px 26px; }
 
 .card1 {
   background-color: #f9f8f7;
   padding: 40px 26px; }
+
+.card-title {
+  text-align: left;
+  margin-bottom: 24px; }
+
+.date {
+  color: #949096;
+  margin: 0px 0px 10px 34px;
+  text-align: left; }
+  .date p {
+    font-size: 14px;
+    font-weight: 400; }
+
+.bubbleChat {
+  position: relative;
+  text-align: left;
+  padding-left: 34px;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px; }
+  .bubbleChat::before {
+    position: absolute;
+    content: '';
+    height: 24px;
+    width: 24px;
+    background: url("https://www.lhv.ee/assets/images/elements/blog.svg");
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 6%; }
+
+.bubbleChat1 {
+  position: relative;
+  text-align: left;
+  padding-left: 34px;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px; }
+  .bubbleChat1::before {
+    position: absolute;
+    content: '';
+    height: 24px;
+    width: 24px;
+    background: url("https://www.lhv.ee/assets/images/elements/read.svg");
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 6%; }
+
+.bubbleChat2 {
+  position: relative;
+  text-align: left;
+  padding-left: 34px;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px; }
+  .bubbleChat2::before {
+    position: absolute;
+    content: '';
+    height: 24px;
+    width: 24px;
+    background: url("https://www.lhv.ee/assets/images/elements/play-video.svg");
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 6%; }
 
 .disclaimer {
   margin-top: 10px;
   margin-bottom: 10px; }
   .disclaimer #footertext {
     font-size: 12px;
-    font-weight: 300; }
+    font-weight: 300;
+    color: #262633; }
+
+.accordion-item {
+  border: 0; }
 
 .accordion-button::after {
   background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
@@ -140,7 +209,23 @@ p {
   background-color: #f9f8f7;
   padding-bottom: 20px; }
 
-.navmenu .navitem {
-  text: black; }
+.container-lhv-green {
+  background-color: #F9F0E9; }
+
+.d-none {
+  font-size: 13px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #34343E; }
+  .d-none li {
+    font-size: 14px;
+    color: #262633;
+    line-height: 26px;
+    font-weight: 400;
+    text-transform: capitalize; }
+
+.container-footer-social {
+  display: contents; }
 
 /*# sourceMappingURL=homepage.css.map */
