@@ -228,4 +228,28 @@ p {
 .container-footer-social {
   display: contents; }
 
+.navbar-nav2.ms-auto {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none; }
+  @media screen and (max-width: 690px) {
+    .navbar-nav2.ms-auto {
+      margin-top: 20px;
+      background-color: #000; } }
+
+@media screen and (max-width: 690px) {
+  li.nav-items {
+    padding-left: 20%;
+    width: 50%; }
+    li.nav-items img {
+      padding: 10px; } }
+
+.lhv-green {
+  padding: 70px; }
+  @media screen and (max-width: 690px) {
+    .lhv-green {
+      padding: 20px; } }
+
 /*# sourceMappingURL=homepage.css.map */
