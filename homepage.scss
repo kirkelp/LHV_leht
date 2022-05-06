@@ -281,3 +281,58 @@ li.nav-items{
         padding: 20px;
     }
 }
+.carousel-indicators{
+    margin-bottom: -2rem;;
+    [data-bs-target]{
+        width: 10px;
+        height: 10px;
+        margin: 5px 7px;
+        background: #869791;
+        display: block;
+        -webkit-backface-visibility: visible;
+        border: 0;
+        transition: opacity .2s ease;
+        border-radius: 30px;
+    }
+}
+#img1{
+    background-image: url(img/img1.svg);
+    background-position: center center;
+    background-size: cover;
+    height: 500px;
+    
+    @media screen and (max-width: 690px){
+        background-image: url(img/img1-2.svg);
+    }
+}
+#img2{
+    background-image: url(img/img2.svg);
+    background-position: center center;
+    background-size: cover;
+    height: 500px;
+    
+    @media screen and (max-width: 690px){
+        background-image: url(img/img2-2.svg);
+    }
+}
+#img3{
+    background-image: url(img/img3.svg);
+    background-position: center center;
+    background-size: cover;
+    height: 500px;
+    
+    @media screen and (max-width: 690px){
+        background-image: url(img/img3-2.svg);
+    }
+}
+#img4{
+    background-image: url(img/img4.svg);
+    background-position: center center;
+    background-size: cover;
+    height: 500px;
+    
+    @media screen and (max-width: 690px){
+        background-image: url(img/img4-2.svg);
+    }
+}
+
